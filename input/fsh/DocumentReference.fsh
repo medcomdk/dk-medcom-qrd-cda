@@ -1,43 +1,16 @@
-Profile: APDDKDocumentReference
-Parent: DocumentReference
-Id: apd-dk-documentreference
-Description: "A profile stating the rules, when exchanging a CDA Appointment (APD-DK) document."
-* status MS
-// TypeCode
-* type 1.. MS
-* type ^short = "TypeCode for APD-DK..."
-* type.coding.system 1.. MS
+Profile: QRDDKDocumentReference
+Parent: CoreDocumentReference
+Id: qrd-dk-documentreference
+Description: "A profile stating the rules, when exchanging a CDA Questionnaire Response Document (QRD-DK)."
 * type.coding.system from $TypeCode (required) 
-* type.coding.code 1.. MS
-// ClassCode
-* category 1..1 MS
 * category.coding.system from $ClassCode (required)
-* category.coding.code 1.. MS
-* category.coding.system 1.. MS
-//* category.coding.display 1.. MS - 
-* category ^short = "..."
-//* category ^definition = "HVIS DEFINITION ØNSKES, er dette syntaksen."
-* content MS
-* content.attachment.contentType 1.. MS
 * content.attachment.contentType from $ContentType (required)
-* content.attachment.language 1.. MS
 * content.attachment.language from $Language (required)
-* content.format 1.. MS
 * content.format from $FormatCode (required)
-* context 1.. MS
-* context.event 1..1 MS 
-* context.event.coding.code 1.. MS
-* context.event.coding.system 1.. MS
 * context.event.coding.system from $EventCode (required)
-* context.facilityType 1.. MS
-* context.facilityType.coding.code 1.. MS
-* context.facilityType.coding.system 1.. MS
 * context.facilityType.coding.system from $FacilityType (required)
-* context.practiceSetting 1.. MS
-* context.practiceSetting.coding.code 1.. MS
-* context.practiceSetting.coding.system 1.. MS
 * context.practiceSetting.coding.system from $FacilityType (required)
-* extension contains medcom-xds-homecommunityid-extension named homeCommunityid 1..1 MS SU 
+* extension[homeCommunityid].valueCoding.system from $HomeCommunityID 
 
 
 
