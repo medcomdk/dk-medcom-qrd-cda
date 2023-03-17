@@ -26,6 +26,7 @@ publisher:
 #
 dependencies:
   medcom.fhir.dk.metadata.core: dev
+  medcom.fhir.dk.xds.metadata: dev
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
