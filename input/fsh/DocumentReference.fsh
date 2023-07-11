@@ -2,7 +2,8 @@ Profile: QRDDKDocumentReference
 Parent: CoreDocumentReference
 Id: qrd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Questionnaire Response Document (QRD-DK)."
-* ^version = "0.8.6"
+* masterIdentifier.value = "urn:uuid:c8f1acf0-2e28-11e6-bdf4-0800200c9a66"
+* masterIdentifier.system = "urn:ietf:rfc:3986"
 * type.coding.system from $TypeCode (required) 
 //* category.coding.system from $ClassCode (required)
 //* content.attachment.contentType from $ContentType (required)
@@ -26,6 +27,8 @@ Instance: 50d6fc3c-d95a-4d12-8e61-8d70584c1f4e
 InstanceOf: QRDDKDocumentReference
 Title: "Instance of QRD-DK DocumentReference."
 Description: "Instance of QRD-DK DocumentReference, containing relevant metadata"
+* masterIdentifier.value = "urn:uuid:c8f1acf0-2e28-11e6-bdf4-0800200c9a66"
+* masterIdentifier.system = "urn:ietf:rfc:3986"
 * status = $StatusCS#current "Current"
 * type.coding.system = $TypeCodeCS
 * type.coding.code = #74465-6 "Questionnaire Response Document"
